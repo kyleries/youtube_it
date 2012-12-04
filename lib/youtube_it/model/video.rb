@@ -137,9 +137,10 @@ class YouTubeIt
       attr_reader :perm_private
  
       # Geodata
-      attr_reader :position
+      # attr_reader :position // I think this should be removed. From what I can gather from the API, position is for Playlists, not physical location.
       attr_reader :latitude
       attr_reader :longitude
+      attr_reader :location
 
       # Videos related to the current video.
       #
